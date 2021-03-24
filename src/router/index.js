@@ -78,6 +78,26 @@ const router =  new Router({
       	description:"1.记住问题和问题的解决方案,便于以后处理相同问题;2.查找大家的解决方案;"
       }
     },
+    {
+      path: '/task',
+      name: 'task',
+      component: resolve => require(['@/components/task/task'],resolve),
+      meta:{
+      	title: "任务列表-西瓜站",
+      	keyword:"西瓜站",
+      	description:"记录任务，防止遗忘。按优先级提醒任务。"
+      }
+    },
+    {
+      path: '/category',
+      name: 'category',
+      component: resolve => require(['@/components/category/category'],resolve),
+      meta:{
+      	title: "小目标-西瓜站",
+      	keyword:"西瓜站",
+      	description:"目标分类，把控全局。"
+      }
+    },
   ]
 })
 
